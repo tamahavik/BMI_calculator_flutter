@@ -46,7 +46,7 @@ class _InputPageState extends State<InputPage> {
                     color: selectedGender == Gender.male
                         ? kActiveCardColor
                         : kInActiveCardColor,
-                    child: IconContent(
+                    child: const IconContent(
                       icon: FontAwesomeIcons.mars,
                       text: 'MALE',
                     ),
@@ -62,7 +62,7 @@ class _InputPageState extends State<InputPage> {
                     color: selectedGender == Gender.female
                         ? kActiveCardColor
                         : kInActiveCardColor,
-                    child: IconContent(
+                    child: const IconContent(
                       icon: FontAwesomeIcons.venus,
                       text: "FEMALE",
                     ),
@@ -78,7 +78,7 @@ class _InputPageState extends State<InputPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     "HEIGHT",
                     style: kLabelTextStyle,
                   ),
@@ -91,7 +91,7 @@ class _InputPageState extends State<InputPage> {
                         height.toString(),
                         style: kNumberTextStyle,
                       ),
-                      Text(
+                      const Text(
                         "cm",
                         style: kLabelTextStyle,
                       )
@@ -103,10 +103,10 @@ class _InputPageState extends State<InputPage> {
                       inactiveTrackColor: Colors.grey,
                       thumbColor: kBottomContainerColor,
                       overlayColor: kTransparencyBottomContainerColor,
-                      thumbShape: RoundSliderThumbShape(
+                      thumbShape: const RoundSliderThumbShape(
                         enabledThumbRadius: 15,
                       ),
-                      overlayShape: RoundSliderOverlayShape(
+                      overlayShape: const RoundSliderOverlayShape(
                         overlayRadius: 30,
                       ),
                     ),
@@ -134,7 +134,7 @@ class _InputPageState extends State<InputPage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           "WEIGHT",
                           style: kLabelTextStyle,
                         ),
@@ -153,7 +153,7 @@ class _InputPageState extends State<InputPage> {
                                 });
                               },
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
                             RoundIconButton(
@@ -176,7 +176,7 @@ class _InputPageState extends State<InputPage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           "AGE",
                           style: kLabelTextStyle,
                         ),
@@ -195,7 +195,7 @@ class _InputPageState extends State<InputPage> {
                                 });
                               },
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
                             RoundIconButton(

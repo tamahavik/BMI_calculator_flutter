@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class RoundIconButton extends StatelessWidget {
   final IconData icon;
-  final Function onPressed;
+  final VoidCallback onPressed;
 
   const RoundIconButton({
     super.key,
@@ -13,17 +13,14 @@ class RoundIconButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
-      child: Icon(icon),
-      onPressed: () {
-        Function fn = onPressed ?? () {};
-        fn();
-      },
-      shape: CircleBorder(),
-      fillColor: Color(0xFF4C4F5E),
-      constraints: BoxConstraints.tightFor(
+      onPressed: onPressed,
+      shape: const CircleBorder(),
+      fillColor: const Color(0xFF4C4F5E),
+      constraints: const BoxConstraints.tightFor(
         width: 56,
         height: 56,
       ),
+      child: Icon(icon),
     );
   }
 }
